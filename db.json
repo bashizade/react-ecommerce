@@ -1,0 +1,13 @@
+{
+    "users":[],
+    "user_address":[],
+    "user_payments":[],
+    "cart_items":[],
+    "products":[],
+    "product_categories":[],
+    "product_inventories":[],
+    "discounts":[],
+    "order_details":[],
+    "order_items":[],
+    "payment_details":[]
+}
