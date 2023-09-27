@@ -2,8 +2,8 @@ import Navbar from "./Navbar";
 
 const Header = () => {
     return (
-        <div className="flex flex-col justify-center items-center p-2">
-            <div className="navbar bg-base-200 flex justify-between items-center flex-row-reverse w-10/12 rounded-xl">
+        <div className="flex flex-col justify-center items-center">
+            <div className="navbar bg-base-200 flex justify-between items-center flex-row-reverse w-full rounded-xl">
                 <div className="">
                     <a className="btn btn-ghost normal-case text-xl">react Ecommerce</a>
                 </div>
