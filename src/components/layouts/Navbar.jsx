@@ -1,6 +1,6 @@
 const Navbar = () => {
     return (
-        <div className="flex justify-center w-full">
+        <div className="flex justify-center w-full max-w-5xl">
             <div className="bg-primary bg-opacity-80 backdrop:blur-sm w-9/12 rounded-bl-xl rounded-br-xl flex justify-center items-center text-white">
                 <ul className="menu menu-horizontal px-1" dir="rtl">
                     <li><a>صفحه اصلی</a></li>
