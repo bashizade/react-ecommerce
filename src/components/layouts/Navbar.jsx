@@ -5,9 +5,9 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal px-1" dir="rtl">
                     <li><a>صفحه اصلی</a></li>
                     <li tabIndex={0}>
-                        <details>
+                        <details className="z-50">
                             <summary>دسته بندی ها</summary>
-                            <ul className="p-2">
+                            <ul className="p-2 text-black">
                                 <li><a>Submenu 1</a></li>
                                 <li><a>Submenu 2</a></li>
                             </ul>

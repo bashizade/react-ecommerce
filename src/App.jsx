@@ -1,13 +1,16 @@
 import Header from './components/layouts/header'
 import Footer from './components/layouts/Footer'
+import Slider from './components/Slider'
+import Categories from './components/Categories'
 
 function App() {
 
   return (
     <div className='flex flex-col items-center justify-center p-2'>
-      <div className='w-full max-w-7xl'>
+      <div className='w-full max-w-5xl'>
         <Header />
-        <h1 className='text-red-500'>hello world</h1>
+        <Slider />
+        <Categories />
       </div>
       <Footer />
     </div>
