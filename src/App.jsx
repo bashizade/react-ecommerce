@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Index from './pages/shop/Index';
 import Product from './pages/shop/Product'
+import Products from './pages/shop/Products';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <div className='w-full max-w-5xl py-8'>
       <Routes>
         <Route path="" element={<Index />} />
+        <Route path="products" element={<Products />} />
         <Route path='product/:productId' element={<Product />} />
       </Routes>
       </div>
