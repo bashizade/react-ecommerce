@@ -7,6 +7,8 @@ import Product from './pages/shop/Product'
 import Products from './pages/shop/Products';
 import Contact from './pages/shop/Contact';
 import Aboutus from './pages/shop/Aboutus';
+import Cart from './pages/shop/Cart';
+import Invoice from './pages/shop/Invoice';
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
         <Route path='product/:productId' element={<Product />} />
         <Route path='contact' element={<Contact />} />
         <Route path='aboutus' element={<Aboutus />} />
+        <Route path='cart' element={<Cart />} />
+        <Route path='invoice' element={<Invoice />} />
       </Routes>
       </div>
       <Footer />

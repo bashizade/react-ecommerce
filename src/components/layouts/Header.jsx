@@ -1,6 +1,10 @@
+import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 
 const Header = () => {
+    const change_theme = (theme) => {
+        document.documentElement.setAttribute("data-theme",theme);
+    }
     return (
         <div className="flex flex-col justify-center items-center w-full">
             <div className="navbar bg-base-200 flex justify-between items-center flex-row-reverse w-full rounded-xl">
@@ -23,7 +27,7 @@ const Header = () => {
                     <div className="dropdown dropdown-start">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
-                                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" alt=""/>
+                                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="" />
                             </div>
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52">
@@ -46,13 +50,28 @@ const Header = () => {
                         </label>
                         <div tabIndex={0} className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-200 shadow">
                             <div className="card-body">
-                                <span className="font-bold text-lg">8 Items</span>
-                                <span className="text-info">Subtotal: $999</span>
+                                <span className="font-bold text-lg">8 کالا</span>
+                                <span className="text-info">جمع خرید: $999</span>
                                 <div className="card-actions">
-                                    <button className="btn btn-primary btn-block">View cart</button>
+                                    <Link to="cart"><button className="btn btn-primary btn-block">نمایش سبد خرید</button></Link>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <details className="dropdown">
+                            <summary className="btn rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.098 19.902a3.75 3.75 0 005.304 0l6.401-6.402M6.75 21A3.75 3.75 0 013 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 003.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008z"></path>
+                                </svg>
+                            </summary>
+                            <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                                <li className="p-1 hover:bg-base-200 rounded-lg cursor-pointer" onClick={()=>change_theme('light')}>light</li>
+                                <li className="p-1 hover:bg-base-200 rounded-lg cursor-pointer" onClick={()=>change_theme('dark')}>dark</li>
+                                <li className="p-1 hover:bg-base-200 rounded-lg cursor-pointer" onClick={()=>change_theme('fantasy')}>fantasy</li>
+                                <li className="p-1 hover:bg-base-200 rounded-lg cursor-pointer" onClick={()=>change_theme('cupcake')}>cupcake</li>
+                            </ul>
+                        </details>
                     </div>
                 </div>
             </div>
