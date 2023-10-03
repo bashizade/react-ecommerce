@@ -2,11 +2,12 @@ import { useParams } from "react-router";
 import AddToCartBtn from "../../components/AddToCartBtn";
 import ProductCard from "../../components/ProductCard";
 import RelationProducts from "../../components/RelationProducts";
+import SetCountProduct from "../../components/SetCountProduct";
 
 const product = () => {
-    const {productId} = useParams();
+    const { productId } = useParams();
 
-    return ( 
+    return (
         <>
             <div className="flex items-start space-x-4">
                 <div className="w-full">
@@ -20,7 +21,8 @@ const product = () => {
                         <p className="text-right">توضیحات خلاصه محصول</p>
                     </div>
                     <div className="flex space-x-4">
-                        <AddToCartBtn productId={1}/>
+                        <AddToCartBtn productId={1} />
+                        <SetCountProduct />
                         <button type="button" className="btn">523000 تومان</button>
                     </div>
                 </div>
@@ -37,7 +39,7 @@ const product = () => {
 
             <RelationProducts />
         </>
-     );
+    );
 }
- 
+
 export default product;

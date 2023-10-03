@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import { Input } from "../Form";
+import LoginRegisterModal from "../LoginRegisterModal";
 
 const Header = () => {
     const change_theme = (theme) => {
@@ -13,7 +15,7 @@ const Header = () => {
                 </div>
                 <div className="w-full max-w-xl flex flex-row-reverse items-center">
                     <div className="w-full ml-2">
-                        <input type="text" placeholder="نام کالا مورد نظر خود را وارد کنید..." className="input input-bordered w-full " dir="rtl" />
+                        <Input type={"text"} placeholder={"نام کالا مورد نظر خود را وارد کنید ...."} name={"serach"} />
                     </div>
                     <div>
                         <button className="btn btn-primary">
@@ -24,7 +26,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="flex-none">
-                    <div className="dropdown dropdown-start">
+                    {/* <div className="dropdown dropdown-start">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
                                 <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="" />
@@ -40,6 +42,9 @@ const Header = () => {
                             <li><a>Settings</a></li>
                             <li><a>Logout</a></li>
                         </ul>
+                    </div> */}
+                    <div>
+                        <LoginRegisterModal />
                     </div>
                     <div className="dropdown dropdown-start">
                         <label tabIndex={0} className="btn btn-ghost btn-circle">

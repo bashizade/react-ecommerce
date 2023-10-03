@@ -1,3 +1,5 @@
+import { Input, Textarea } from "../../components/Form";
+
 const Contact = () => {
     return (
         <>
@@ -7,18 +9,10 @@ const Contact = () => {
                 </div>
                 <div>
                     <form action="" method="post">
-                        <div className="mb-3">
-                            <input type="text" placeholder="نام...." className="input input-bordered w-full" dir="rtl" />
-                        </div>
-                        <div className="mb-3">
-                            <input type="text" placeholder="ایمیل ....." className="input input-bordered w-full" dir="rtl" />
-                        </div>
-                        <div className="mb-3">
-                            <input type="text" placeholder="موضوع...." className="input input-bordered w-full" dir="rtl" />
-                        </div>
-                        <div className="mb-3">
-                            <textarea className="textarea textarea-bordered w-full" placeholder="توضیحات....." dir="rtl"></textarea>
-                        </div>
+                        <Input type={"text"} name={"name"} placeholder={"امیر.."} label={"نام خود را وارد کنید"} className={"mb-3"} />
+                        <Input type={"text"} name={"email"} placeholder={"example@email.com"} label={"ایمیل خود را وارد کیند"} className={"mb-3"} />
+                        <Input type={"text"} name={"subject"} placeholder={"واریز نشدن مبلغ..."} label={"موضوع خود را وارد کنید"} className={"mb-3"} />
+                        <Textarea name={"info"} placeholder={"با سلام .."} label={"متن خود را بنویسید"} className={"mb-3"} />
                         <button className="btn btn-primary">ارسال</button>
                     </form>
                 </div>

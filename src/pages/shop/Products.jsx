@@ -1,5 +1,5 @@
 import ProductCard from "../../components/ProductCard";
-import CheckBox from "../../components/form/CheckBox";
+import {CheckBox, Input} from "../../components/Form";
 
 const Products = () => {
     return (
@@ -27,11 +27,11 @@ const Products = () => {
             </div>
             <div className=" w-80">
                 <div className="w-full bg-base-200 p-2 rounded-xl mb-5">
-                    <input type="text" placeholder="نام کالا مورد نظر خود را وارد کنید..." className="input input-bordered w-full text-sm" dir="rtl" />
+                    <Input type={"text"} placeholder={"نام کالا را وارد کنید"} />
                 </div>
                 <div className="w-full bg-base-200 p-2 rounded-xl mb-5">
                     <h1 className="text-right mb-2">محدوده قیمت</h1>
-                    <input type="range" min="0" max="100" value="40" className="range" />
+                    <input type="range" min="0" max="100" value="24" className="range" />
                 </div>
                 <div className="w-full bg-base-200 p-2 rounded-xl mb-5">
                     <h1 className="text-right mb-2">دسته بندی محصول را انتخاب کنید</h1>
