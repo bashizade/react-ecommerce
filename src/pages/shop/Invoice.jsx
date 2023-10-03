@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import {Input} from "../../components/Form"
 
 const Invoice = () => {
     return ( 
@@ -35,7 +36,15 @@ const Invoice = () => {
                 </div>
             </div>
             <div className="w-full bg-base-200 rounded-xl p-1">
-                
+                <form action="" method="post">
+                    <Input name={"name"} placeholder={"امیر..."} label={"نام و نام خانوادگی گیرنده"} className={"mb-3"} />
+                    <Input name={"state"} placeholder={"یزد..."} label={"استان گیرنده"} className={"mb-3"} />
+                    <Input name={"city"} placeholder={"تفت..."} label={"شهر گیرنده"} className={"mb-3"} />
+                    <Input name={"street"} placeholder={"صدرا..."} label={"خیابان گیرنده"} className={"mb-3"} />
+                    <Input name={"postalcode"} placeholder={"8915..."} label={"کدپستی گیرنده"} className={"mb-3"} />
+                    <Input name={"email"} placeholder={"example@gmail.com..."} label={"ایمیل گیرنده"} className={"mb-3"} />
+                    <Input name={"phone"} placeholder={"0933..."} label={"شماره موبایل گیرنده"} className={"mb-3"} />
+                </form>
             </div>
         </div>
      );
