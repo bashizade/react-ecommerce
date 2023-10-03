@@ -75,6 +75,8 @@ const Header = () => {
                                 <li className="p-1 hover:bg-base-200 rounded-lg cursor-pointer" onClick={()=>change_theme('dark')}>dark</li>
                                 <li className="p-1 hover:bg-base-200 rounded-lg cursor-pointer" onClick={()=>change_theme('fantasy')}>fantasy</li>
                                 <li className="p-1 hover:bg-base-200 rounded-lg cursor-pointer" onClick={()=>change_theme('cupcake')}>cupcake</li>
+                                <li className="p-1 hover:bg-base-200 rounded-lg cursor-pointer" onClick={()=>change_theme('acid')}>acid</li>
+                                <li className="p-1 hover:bg-base-200 rounded-lg cursor-pointer" onClick={()=>change_theme('lemonade')}>lemonade</li>
                             </ul>
                         </details>
                     </div>
